@@ -15,15 +15,39 @@
   </head>
 
   <body id="body" onload="init()">
+    <h1 class="center-text">Gaming Hours Over the Years</h1>
+    <p class="center-text">
+      I would consider myself a pretty avid gamer, but over the past several
+      years my gaming habits have changed rather interestingly. Whether my
+      interests shifted from genre to genre, or certain life events impacting my
+      gaming frequency, I have not been consistent in how I use my free time to
+      game. Over the past 7 years, I've been recording the number of hours I
+      spend on each video game and I've organized them by genre and platform.
+      Use the buttons below to navigate this website and learn more about my
+      gaming habits over time.
+    </p>
     <div id="sceneButtons">
       <button id="prev">❮</button>
       <button id="overview">Overview</button>
-      <button id="other">Web Dev. Topics</button>
-      <button id="other2">Free Exploration</button>
+      <button id="other">By Genre</button>
+      <button id="other2">By Game</button>
       <button id="next">❯</button>
     </div>
+    <select id="selector" style="display: none">
+      <option value="Multiplayer Online Battle Arena (MOBA)">
+        Multiplayer Online Battle Arena (MOBA)
+      </option>
+      <option value="RPG">RPG</option>
+      <option value="Fighting">Fighting</option>
+      <option value="Action-adventure">Action-adventure</option>
+      <option value="Battle Royale">Battle Royale</option>
+      <option value="Sandbox">Sandbox</option>
+    </select>
+    <div>
+      <p id="description" class="center-text"></p>
+    </div>
     <div id="vizContainer">
-      <svg height="600" width="800"></svg>
+      <svg height="800" width="800"></svg>
     </div>
     <div id="tooltip"></div>
   </body>

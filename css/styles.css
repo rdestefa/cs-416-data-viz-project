@@ -2,6 +2,12 @@ body {
   font-family: 'Trebuchet MS', sans-serif;
 }
 
+.center-text {
+  width: 600px;
+  text-align: center;
+  margin: 10px auto;
+}
+
 .x-label {
   font-size: 14px;
 }
@@ -12,9 +18,13 @@ body {
 
 #sceneButtons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 500px;
   margin: auto;
+}
+
+#selector {
+  margin: 10px auto;
 }
 
 button {
