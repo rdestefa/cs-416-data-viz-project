@@ -1,0 +1,61 @@
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.x-label {
+  font-size: 14px;
+}
+
+.y-label {
+  font-size: 14px;
+}
+
+#sceneButtons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: auto;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid gray;
+  border-right: 0px;
+  background-color: gainsboro;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+button:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+button:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-right: 1px solid gray;
+}
+
+#vizContainer {
+  height: 600px;
+  margin: 0 auto;
+  width: 600px;
+}
+
+#tooltip {
+  position: absolute;
+  padding: 6px;
+  font-size: 12px;
+  background: gainsboro;
+  border: 0px;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+}
